@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+.dark-mode {
+    background-color: #313131;
+    color: #ffffff;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.height-full{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.container{
+    padding: 50px;
+    height: 50%;
+}
+
+.over-tracker{
+    flex-direction: row;
+}
+
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: black;
+    background-color: lightgray;
+}
+
+.play-button{
+    padding: 10px 15px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.light-dark-mode{
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#comment{
+    min-height: 20%;
+    max-height: 20%;
+    /* height: 50%; */
+}
+
+.float-left{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 20px;
+}
+
+.float-bottom{
+    position: absolute;
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .light-dark-mode{
+        height: 32px;
+    }
+    .ball {
+        height: 30px;
+        width: 30px;
+    }
+
+    .play-button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .float-left{
+        font-size: 14px;
+        top: 40px;
+    }
+    .container {
+        padding: 10px;
+        width: 90vw;
+        font-size: 13px;
+    }
+
+    .ball {
+        height: 25px;
+        width: 25px;
+    }
+    .flex{
+        gap: 10px;
+    }
+    .play-button {
+        padding: 5px 10px;
+    }
+}
